@@ -65,15 +65,6 @@ main h1 {
 main p {
   font-size: 20px;
 }
-main .registrarse {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-main .registrarse input {
-  font-size: 20px;
-  display: block;
-}
 main form {
   display: flex;
   flex-direction: column;
@@ -97,18 +88,29 @@ main #morikawa {
 main .imagenJuego {
   width: 400px;
 }
-main .imagenesYDescripciones {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-}
 
 footer {
   width: 100%;
   background-color: rgba(129, 0, 0, 0.801);
   border: 1px solid white;
   border-radius: 10px;
+}
+
+.imagenesYDescripciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.registrarse {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.registrarse input {
+  font-size: 20px;
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

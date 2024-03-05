@@ -58,15 +58,6 @@ main{
     p{
         font-size: 20px;
     }
-    .registrarse{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        input{
-            font-size: 20px;
-            display: block;
-        }
-    }
     form{
         display: flex;
         flex-direction: column;
@@ -92,16 +83,25 @@ main{
     .imagenJuego{
         width: 400px;
     }
-    .imagenesYDescripciones{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: center;
-    }
 }
 footer{
     width: 100%;
     background-color: rgb(129, 0, 0, 0.801);
     border: 1px solid white;
     border-radius: 10px;
+}
+.imagenesYDescripciones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.registrarse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    input{
+        font-size: 20px;
+        display: block;
+    }
 }
