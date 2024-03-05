@@ -105,3 +105,8 @@ footer{
         display: block;
     }
 }
+@media(max-width: 480px){
+    #imagenDeInicio{
+        padding-left: unset;
+    }
+}
