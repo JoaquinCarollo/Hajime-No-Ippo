@@ -22,17 +22,22 @@ header{
         justify-content: center;
         li{
             margin: 0px 10px;
+            a{
+                text-decoration: none;
+                color: white;
+                padding-top: 20px;
+                &:hover{
+                    color: yellow;
+                }
+            }
         }
     }
 }
+li{
+    font-size: 20px
+}
 ul{
     list-style: none;
-}
-a{
-    text-decoration: none;
-    &:hover{
-        color: yellow;
-    }
 }
 main{
     background-color: rgba(255, 99, 71, 0.801);
@@ -89,4 +94,10 @@ main{
         justify-items: center;
         align-items: center;
     }
+}
+footer{
+    width: 100%;
+    background-color: rgb(129, 0, 0, 0.801);
+    border: 1px solid white;
+    border-radius: 10px;
 }

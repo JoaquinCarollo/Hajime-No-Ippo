@@ -28,16 +28,21 @@ header .menu {
 header .menu li {
   margin: 0px 10px;
 }
+header .menu li a {
+  text-decoration: none;
+  color: white;
+  padding-top: 20px;
+}
+header .menu li a:hover {
+  color: yellow;
+}
+
+li {
+  font-size: 20px;
+}
 
 ul {
   list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: yellow;
 }
 
 main {
@@ -93,6 +98,13 @@ main .imagenesYDescripciones {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(129, 0, 0, 0.801);
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
