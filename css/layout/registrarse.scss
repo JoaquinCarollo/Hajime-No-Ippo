@@ -1,0 +1,26 @@
+#formulario{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .boton{
+            &:hover{
+                background: red;
+                color: yellow;
+            }
+        }
+    }
+    .registrarse{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        input{
+            font-size: 20px;
+            display: block;
+        }
+    }
+}

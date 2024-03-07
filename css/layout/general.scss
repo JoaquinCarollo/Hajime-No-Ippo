@@ -1,0 +1,21 @@
+@font-face{
+    font-family: tipografía;
+    src: url(../recursos/Hey\ Comic.ttf);
+}
+*{
+    font-family: tipografía;
+    p{
+        font-size: 20px;
+    }
+}
+body{
+    background-image: url(../recursos/imagenDeFondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li{
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+}
