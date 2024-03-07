@@ -4,6 +4,9 @@
 }
 *{
     font-family: tipografía;
+    p{
+        font-size: 20px;
+    }
 }
 body{
     background-image: url(../recursos/imagenDeFondo.jpg);
@@ -13,7 +16,7 @@ body{
 header{
     background-color: rgba(225, 4, 4, 0.801);
     width: 100%;
-    height: 65px;
+    height: 10%;
     border: 1px solid white;
     border-radius: 10px;
     .menu{
@@ -38,7 +41,7 @@ header{
     }
 }
 li{
-    font-size: 20px
+    font-size: 20px;
 }
 ul{
     list-style: none;
@@ -47,17 +50,26 @@ main{
     background-color: rgba(255, 99, 71, 0.801);
     border: 1px solid white;
     border-radius: 10px;
-    #imagenDeInicio{
-        height: 400px;
-        padding-left: 30%;
-    }
     h1{
-        padding-left: 43%;
         text-decoration:underline
     }
-    p{
-        font-size: 20px;
+}
+.inicio{
+    #imagenDeInicio{
+        height: 66%;
+        padding-left: 30%;
+        width: 50%;
     }
+    iframe{
+        padding-left: 13%;
+        width: 70%;
+        height: 70%;
+    }
+}
+#formulario{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     form{
         display: flex;
         flex-direction: column;
@@ -70,18 +82,24 @@ main{
             }
         }
     }
-    iframe{
-        padding-left: 13%;
-        width: 70%;
-        height: 70%;
+    .registrarse{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        input{
+            font-size: 20px;
+            display: block;
+        }
     }
+}
+.autor{
     #morikawa{
         width: 40%;
         height: 65%;
         padding-left: 33%;
-    }
-    .imagenJuego{
-        width: 400px;
+        @media(max-width: 480px){
+            padding-left: unset;
+        }
     }
 }
 footer{
@@ -95,18 +113,28 @@ footer{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-}
-.registrarse{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    input{
-        font-size: 20px;
-        display: block;
+    .imagenJuego{
+        width: 25rem;
     }
 }
-@media(max-width: 480px){
-    #imagenDeInicio{
-        padding-left: unset;
+@media (min-width: 360px) and (max-width: 480px){
+    .inicio{
+        #imagenDeInicio{
+            height: 33%;
+            width: 100%;
+            padding-left: unset;
+        }
+        iframe{
+            padding-left: unset;
+            width: 100%;
+            height: 33%;
+        }
+    }
+    .autor{
+        #morikawa{
+            width: 100%;
+            height: 33%;
+            padding-left: unset;
+        }
     }
 }
