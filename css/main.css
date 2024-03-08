@@ -27,27 +27,31 @@ ul {
 header {
   background-color: rgba(225, 4, 4, 0.801);
   width: 100%;
-  height: 10%;
+  height: 4rem;
   border: 1px solid white;
   border-radius: 10px;
 }
-header .menu {
+header nav {
+  width: 100%;
+}
+header nav .menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: 10%;
 }
-header .menu li {
+header nav .menu li {
   margin: 0px 10px;
 }
-header .menu li a {
+header nav .menu li a {
   text-decoration: none;
   color: white;
   padding-top: 20px;
 }
-header .menu li a:hover {
+header nav .menu li a:hover {
   color: yellow;
 }
-header .menu li:hover {
+header nav .menu li:hover {
   transform: scale(1.2, 1.2);
   transition: all 1s;
 }
@@ -56,6 +60,7 @@ main {
   background-color: rgba(255, 99, 71, 0.801);
   border: 1px solid white;
   border-radius: 10px;
+  width: 100%;
 }
 main h1 {
   text-decoration: underline;
@@ -71,15 +76,18 @@ main h1 {
   width: 25rem;
 }
 
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .inicio #imagenDeInicio {
-  height: 66%;
-  padding-left: 30%;
+  height: 50%;
   width: 50%;
 }
-.inicio iframe {
-  padding-left: 13%;
-  width: 70%;
-  height: 70%;
+.inicio #introduccion {
+  width: 25%;
+  height: 25%;
 }
 
 footer {
@@ -114,32 +122,47 @@ footer {
   display: block;
 }
 
-.autor #morikawa {
-  width: 40%;
-  height: 65%;
-  padding-left: 33%;
+.autor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media (max-width: 480px) {
-  .autor #morikawa {
-    padding-left: unset;
-  }
+.autor #morikawa {
+  width: 50%;
+  height: 50%;
 }
 
 @media (min-width: 360px) and (max-width: 480px) {
-  .inicio #imagenDeInicio {
-    height: 33%;
-    width: 100%;
-    padding-left: unset;
-  }
-  .inicio iframe {
-    padding-left: unset;
-    width: 100%;
-    height: 33%;
+  .menu li {
+    font-size: 75%;
   }
   .autor #morikawa {
     width: 100%;
     height: 33%;
     padding-left: unset;
+  }
+  .imagenesYDescripciones {
+    flex-direction: column;
+    grid-template-areas: "imagenIppo" "descripcionIppo" "imagenMamoru" "descripcionMamoru" "imagenIchiro" "descripcionIchiro";
+    grid-template-columns: unset;
+  }
+  .imagenesYDescripciones .imagenIppo {
+    grid-area: imagenIppo;
+  }
+  .imagenesYDescripciones .descripcionIppo {
+    grid-area: descripcionIppo;
+  }
+  .imagenesYDescripciones .imagenMamoru {
+    grid-area: imagenMamoru;
+  }
+  .imagenesYDescripciones .descripcionMamoru {
+    grid-area: descripcionMamoru;
+  }
+  .imagenesYDescripciones .imagenIchiro {
+    grid-area: imagenIchiro;
+  }
+  .imagenesYDescripciones .descripcionIchiro {
+    grid-area: descripcionIchiro;
   }
 }
 
