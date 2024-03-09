@@ -12,11 +12,10 @@ header{
         width: 100%;
         .menu{
             display: flex;
-            flex-direction: row;
             justify-content: center;
-            height: 10%;
+            padding-right: 2rem;
             li{
-                margin: 0px 10px;
+                margin: 0px 5px;
                 a{
                     text-decoration: none;
                     color: white;
@@ -97,7 +96,7 @@ footer{
 @media (min-width: 360px) and (max-width: 480px){
     .menu{
         li{
-            font-size: 75%;
+            font-size: 80%;
         }
     }
     .autor{
@@ -114,25 +113,29 @@ footer{
                              "imagenMamoru"
                              "descripcionMamoru"
                              "imagenIchiro"
-                             "descripcionIchiro";
+                             "descripcionIchiro"
+                             "imagenGba"
+                             "descripcionGba"
+                             "imagenNds"
+                             "descripcionNds"
+                             "imagenPs3"
+                             "descripcionPs3";
         grid-template-columns: unset;
-        .imagenIppo{
-            grid-area: imagenIppo;
+        @each $imagen in Ippo, Mamoru, Ichiro, Gba, Nds, Ps3{
+            .imagen#{$imagen}{
+                grid-area: imagen#{$imagen};
+            }
         }
-        .descripcionIppo{
-            grid-area: descripcionIppo;
+        @each $descripcion in Ippo, Mamoru, Ichiro, Gba, Nds, Ps3{
+            .descripcion#{$descripcion}{
+                grid-area: descripcion#{$descripcion};
+            }
         }
-        .imagenMamoru{
-            grid-area: imagenMamoru;
+        .imagenPersonaje{
+            width: 100%;
         }
-        .descripcionMamoru{
-            grid-area: descripcionMamoru;
-        }
-        .imagenIchiro{
-            grid-area: imagenIchiro;
-        }
-        .descripcionIchiro{
-            grid-area: descripcionIchiro;
+        .imagenJuego{
+            width: 100%;
         }
     }
 }

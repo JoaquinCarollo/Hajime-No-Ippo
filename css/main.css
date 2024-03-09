@@ -36,12 +36,11 @@ header nav {
 }
 header nav .menu {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  height: 10%;
+  padding-right: 2rem;
 }
 header nav .menu li {
-  margin: 0px 10px;
+  margin: 0px 5px;
 }
 header nav .menu li a {
   text-decoration: none;
@@ -134,7 +133,7 @@ footer {
 
 @media (min-width: 360px) and (max-width: 480px) {
   .menu li {
-    font-size: 75%;
+    font-size: 80%;
   }
   .autor #morikawa {
     width: 100%;
@@ -143,26 +142,50 @@ footer {
   }
   .imagenesYDescripciones {
     flex-direction: column;
-    grid-template-areas: "imagenIppo" "descripcionIppo" "imagenMamoru" "descripcionMamoru" "imagenIchiro" "descripcionIchiro";
+    grid-template-areas: "imagenIppo" "descripcionIppo" "imagenMamoru" "descripcionMamoru" "imagenIchiro" "descripcionIchiro" "imagenGba" "descripcionGba" "imagenNds" "descripcionNds" "imagenPs3" "descripcionPs3";
     grid-template-columns: unset;
   }
   .imagenesYDescripciones .imagenIppo {
     grid-area: imagenIppo;
   }
-  .imagenesYDescripciones .descripcionIppo {
-    grid-area: descripcionIppo;
-  }
   .imagenesYDescripciones .imagenMamoru {
     grid-area: imagenMamoru;
-  }
-  .imagenesYDescripciones .descripcionMamoru {
-    grid-area: descripcionMamoru;
   }
   .imagenesYDescripciones .imagenIchiro {
     grid-area: imagenIchiro;
   }
+  .imagenesYDescripciones .imagenGba {
+    grid-area: imagenGba;
+  }
+  .imagenesYDescripciones .imagenNds {
+    grid-area: imagenNds;
+  }
+  .imagenesYDescripciones .imagenPs3 {
+    grid-area: imagenPs3;
+  }
+  .imagenesYDescripciones .descripcionIppo {
+    grid-area: descripcionIppo;
+  }
+  .imagenesYDescripciones .descripcionMamoru {
+    grid-area: descripcionMamoru;
+  }
   .imagenesYDescripciones .descripcionIchiro {
     grid-area: descripcionIchiro;
+  }
+  .imagenesYDescripciones .descripcionGba {
+    grid-area: descripcionGba;
+  }
+  .imagenesYDescripciones .descripcionNds {
+    grid-area: descripcionNds;
+  }
+  .imagenesYDescripciones .descripcionPs3 {
+    grid-area: descripcionPs3;
+  }
+  .imagenesYDescripciones .imagenPersonaje {
+    width: 100%;
+  }
+  .imagenesYDescripciones .imagenJuego {
+    width: 100%;
   }
 }
 
