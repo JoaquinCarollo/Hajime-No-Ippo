@@ -96,27 +96,35 @@ footer {
   border-radius: 10px;
 }
 
-#formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#registro {
+  width: 99%;
+  padding: 1% 0% 1% 1%;
 }
-#formulario form {
+#registro ul {
+  padding-top: 1%;
+}
+#registro #formulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#formulario form .boton:hover {
+#registro #formulario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#registro #formulario form .boton:hover {
   background: red;
   color: yellow;
 }
-#formulario .registrarse {
+#registro #formulario .registrarse {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-#formulario .registrarse input {
+#registro #formulario .registrarse input {
   font-size: 20px;
   display: block;
 }
