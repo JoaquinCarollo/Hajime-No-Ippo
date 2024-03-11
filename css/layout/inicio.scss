@@ -1,0 +1,13 @@
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #imagenDeInicio{
+        height: 50%;
+        width: 50%;
+    }
+    #introduccion{
+        width: 25%;
+        height: 25%;
+    }
+}
