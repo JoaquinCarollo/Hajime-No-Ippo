@@ -64,6 +64,9 @@ main {
 main h1 {
   text-decoration: underline;
 }
+main .tituloDeLaPagina {
+  font-size: 1.5rem;
+}
 
 .imagenesYDescripciones {
   display: grid;
@@ -72,6 +75,9 @@ main h1 {
   align-items: center;
 }
 .imagenesYDescripciones .imagenJuego {
+  width: 25rem;
+}
+.imagenesYDescripciones .imagenJuegoGba {
   width: 25rem;
 }
 
@@ -96,37 +102,38 @@ footer {
   border-radius: 10px;
 }
 
+#formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#formulario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#formulario form .boton:hover {
+  background: red;
+  color: yellow;
+}
+#formulario .registrarse {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#formulario .registrarse input {
+  font-size: 20px;
+  display: block;
+}
+
 #registro {
   width: 99%;
   padding: 1% 0% 1% 1%;
 }
 #registro ul {
   padding-top: 1%;
-}
-#registro #formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#registro #formulario form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#registro #formulario form .boton:hover {
-  background: red;
-  color: yellow;
-}
-#registro #formulario .registrarse {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#registro #formulario .registrarse input {
-  font-size: 20px;
-  display: block;
 }
 
 .autor {

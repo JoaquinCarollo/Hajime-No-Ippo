@@ -5,10 +5,32 @@
 @import"../css/layout/header.scss";
 
 //main
-@import"../css/layout/main.scss";
+main{
+    background-color: rgba(255, 99, 71, 0.801);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100%;
+    h1{
+        text-decoration:underline
+    }
+    .tituloDeLaPagina{
+        font-size: 1.5rem;
+    }
+}
 
 //personajesJuegos
-@import"../css/layout/personajesJuegos.scss";
+.imagenesYDescripciones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    .imagenJuego{
+        width: 25rem;
+    }
+    .imagenJuegoGba{
+        width: 25rem;
+    }
+}
 
 //inicio
 @import"../css/layout/inicio.scss";
