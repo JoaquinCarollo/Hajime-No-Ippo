@@ -16,6 +16,9 @@ main{
     .tituloDeLaPagina{
         font-size: 1.5rem;
     }
+    p{
+        padding-left: 5%;
+    }
 }
 
 //personajesJuegos
@@ -36,7 +39,15 @@ main{
 @import"../css/layout/inicio.scss";
 
 //footer
-@import"../css/layout/footer.scss";
+footer{
+    width: 100%;
+    background-color: rgb(129, 0, 0, 0.801);
+    border: 1px solid white;
+    border-radius: 10px;
+    li{
+        color: white;
+    }
+}
 
 //registrarse
 @import"../css/layout/registrarse.scss";

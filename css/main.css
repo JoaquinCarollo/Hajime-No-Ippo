@@ -67,6 +67,9 @@ main h1 {
 main .tituloDeLaPagina {
   font-size: 1.5rem;
 }
+main p {
+  padding-left: 5%;
+}
 
 .imagenesYDescripciones {
   display: grid;
@@ -100,6 +103,9 @@ footer {
   background-color: rgba(129, 0, 0, 0.801);
   border: 1px solid white;
   border-radius: 10px;
+}
+footer li {
+  color: white;
 }
 
 #formulario {
