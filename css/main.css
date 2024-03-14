@@ -68,7 +68,7 @@ main .tituloDeLaPagina {
   font-size: 1.5rem;
 }
 main p {
-  padding-left: 5%;
+  padding-left: 2%;
 }
 
 .imagenesYDescripciones {
@@ -169,7 +169,7 @@ footer li {
   }
   .imagenesYDescripciones {
     flex-direction: column;
-    grid-template-areas: "imagenIppo" "descripcionIppo" "imagenMamoru" "descripcionMamoru" "imagenIchiro" "descripcionIchiro" "imagenGba" "descripcionGba" "imagenNds" "descripcionNds" "imagenPs3" "descripcionPs3";
+    grid-template-areas: "imagenIppo" "descripcionIppo" "imagenMamoru" "descripcionMamoru" "imagenIchiro" "descripcionIchiro" "imagenGenji" "descripcionGenji" "imagenGba" "descripcionGba" "imagenNds" "descripcionNds" "imagenPs3" "descripcionPs3";
     grid-template-columns: unset;
   }
   .imagenesYDescripciones .imagenIppo {
@@ -178,8 +178,8 @@ footer li {
   .imagenesYDescripciones .imagenMamoru {
     grid-area: imagenMamoru;
   }
-  .imagenesYDescripciones .imagenIchiro {
-    grid-area: imagenIchiro;
+  .imagenesYDescripciones .imagenGenji Ichiro {
+    grid-area: imagenGenji Ichiro;
   }
   .imagenesYDescripciones .imagenGba {
     grid-area: imagenGba;
@@ -199,8 +199,8 @@ footer li {
   .imagenesYDescripciones .descripcionIchiro {
     grid-area: descripcionIchiro;
   }
-  .imagenesYDescripciones .descripcionGba {
-    grid-area: descripcionGba;
+  .imagenesYDescripciones .descripcionGenji Gba {
+    grid-area: descripcionGenji Gba;
   }
   .imagenesYDescripciones .descripcionNds {
     grid-area: descripcionNds;
