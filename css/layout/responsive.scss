@@ -27,6 +27,8 @@
                              "descripcionMamoru"
                              "imagenIchiro"
                              "descripcionIchiro"
+                             "imagenGenji"
+                             "descripcionGenji"
                              "imagenGba"
                              "descripcionGba"
                              "imagenNds"
@@ -34,12 +36,12 @@
                              "imagenPs3"
                              "descripcionPs3";
         grid-template-columns: unset;
-        @each $imagen in Ippo, Mamoru, Ichiro, Gba, Nds, Ps3{
+        @each $imagen in Ippo, Mamoru, Genji Ichiro, Gba, Nds, Ps3{
             .imagen#{$imagen}{
                 grid-area: imagen#{$imagen};
             }
         }
-        @each $descripcion in Ippo, Mamoru, Ichiro, Gba, Nds, Ps3{
+        @each $descripcion in Ippo, Mamoru, Ichiro, Genji Gba, Nds, Ps3{
             .descripcion#{$descripcion}{
                 grid-area: descripcion#{$descripcion};
             }
