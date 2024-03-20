@@ -41,7 +41,7 @@
                 grid-area: imagen#{$imagen};
             }
         }
-        @each $descripcion in Ippo, Mamoru, Ichiro, Genji Gba, Nds, Ps3{
+        @each $descripcion in Ippo, Mamoru, Ichiro, Genji, Gba, Nds, Ps3{
             .descripcion#{$descripcion}{
                 grid-area: descripcion#{$descripcion};
             }
